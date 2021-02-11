@@ -1,4 +1,4 @@
-package com.example.ezhealth_mobile;
+package com.example.ezhealth_mobile.activity;
 
 import androidx.annotation.LayoutRes;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,9 +10,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import com.example.ezhealth_mobile.content.ContentFirstPanelInformation;
+import com.example.ezhealth_mobile.content.ContentFirstPanelQuantity;
+import com.example.ezhealth_mobile.content.ContentPanel;
+import com.example.ezhealth_mobile.entity.ObjectDefault;
+import com.example.ezhealth_mobile.R;
+
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class DualPanelActivity extends AppCompatActivity {
 
     ContentPanel contentPanel;
     ConstraintLayout includeFirstPanel;
@@ -21,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dual_panel);
 
         includeFirstPanel = (ConstraintLayout) findViewById(R.id.include);
 
@@ -35,9 +41,8 @@ public class MainActivity extends AppCompatActivity {
         this.selectFirstTypePanel("information" , "Café da manhã");
     }
 
-    /* Function: selectFirstTypePainel(String type, String titlePanel, Integer quantity)
-    *  For panel type quantity call it that: this.selectTypePainel(quantity , "Cajú", 5, "g");
-    *  For panel type information call it that: this.selectTypePainel(information , "Cajú", null, "min" || "h");
+    /* Function: selectFirstTypePanel
+    *  Description: This funcion work for switching the first panel between "information panel" and "quantity panel"
     */
     public void selectFirstTypePanel(String type, String titlePanel){
         switch (type){
@@ -56,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /* Function: setFirstPanel(@LayoutRes int layoutId)
+    /* Function: setFirstPanel
     *  Description: The first panel can be used to display information or receive quantities
     */
     private void setFirstPanel(@LayoutRes int layoutId){

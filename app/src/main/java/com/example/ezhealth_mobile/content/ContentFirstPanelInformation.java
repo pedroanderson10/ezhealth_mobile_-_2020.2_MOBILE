@@ -1,10 +1,14 @@
-package com.example.ezhealth_mobile;
+package com.example.ezhealth_mobile.content;
 
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.ezhealth_mobile.entity.ObjectDefault;
+import com.example.ezhealth_mobile.R;
+import com.example.ezhealth_mobile.util.RecyclerViewAdapter;
 
 import java.util.ArrayList;
 

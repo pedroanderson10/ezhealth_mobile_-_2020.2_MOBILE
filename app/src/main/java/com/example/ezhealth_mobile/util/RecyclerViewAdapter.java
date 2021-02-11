@@ -1,4 +1,4 @@
-package com.example.ezhealth_mobile;
+package com.example.ezhealth_mobile.util;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,6 +6,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.ezhealth_mobile.R;
+import com.example.ezhealth_mobile.entity.ObjectDefault;
 
 import java.util.ArrayList;
 

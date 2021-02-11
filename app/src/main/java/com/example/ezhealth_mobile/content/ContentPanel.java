@@ -1,7 +1,9 @@
-package com.example.ezhealth_mobile;
+package com.example.ezhealth_mobile.content;
 
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.ezhealth_mobile.R;
 
 public abstract class ContentPanel {
 

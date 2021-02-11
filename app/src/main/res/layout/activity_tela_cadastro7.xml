@@ -5,41 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DFE4EA"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.TelaCadastro7Activity">
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="415dp"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_telas_cadastro"
+        android:text="Tela Cadastro"
+        android:paddingLeft="155dp"
+        android:paddingTop="15dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="415dp"
+        android:layout_height="70dp"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:paddingLeft="195dp"
+        android:paddingTop="5dp"
+        android:text="7/7"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EzHealth"
+        android:text="Informações de acesso"
+        android:textAlignment="center"
         android:textColor="#2F3542"
-        android:textSize="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintVertical_bias="0.23000002" />
 
-    <ImageView
-        android:id="@+id/imageLogin1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
-        app:srcCompat="@drawable/hospital" />
 
     <EditText
-        android:id="@+id/editTextEmailLogin"
+        android:id="@+id/editTextEmailCadastro"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_email"
         android:drawablePadding="12dp"
-        android:ems="10"
         android:elevation="4dp"
+        android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -52,14 +79,13 @@
         app:layout_constraintVertical_bias="0.35000002" />
 
     <EditText
-        android:id="@+id/editTextSenhaLogin"
+        android:id="@+id/editTextSenhaCadastro1"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/custom_senha"
         android:drawablePadding="12dp"
-        android:ems="10"
         android:elevation="4dp"
+        android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
         android:padding="10dp"
@@ -68,22 +94,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.43" />
 
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="100dp"
+    <EditText
+        android:id="@+id/editTextSenhaCadastro2"
+        android:layout_width="230dp"
         android:layout_height="40dp"
-        android:background="@drawable/button_login"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
         android:elevation="4dp"
-        android:onClick="login"
-        android:text="Login"
+        android:ems="10"
+        android:hint="Confirme a senha"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.51" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,31 +137,19 @@
         app:layout_constraintVertical_bias="0.69"
         app:srcCompat="@drawable/google" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Não tem conta ainda?"
-        android:textColor="#2F3542"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
-
     <Button
-        android:id="@+id/buttonCadastro"
+        android:id="@+id/buttonProximo7"
         android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/button_login"
         android:elevation="4dp"
-        android:onClick="cadastrarUsuario"
-        android:text="Cadastre-se"
+        android:onClick="voltarTelaLogin"
+        android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.81" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

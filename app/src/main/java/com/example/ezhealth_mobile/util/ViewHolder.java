@@ -1,4 +1,4 @@
-package com.example.ezhealth_mobile;
+package com.example.ezhealth_mobile.util;
 
 import android.view.Gravity;
 import android.view.MenuInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.ezhealth_mobile.R;
 
 import java.lang.reflect.InvocationTargetException;
 

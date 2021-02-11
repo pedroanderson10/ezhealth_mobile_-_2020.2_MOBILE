@@ -1,4 +1,4 @@
-package com.example.ezhealth_mobile;
+package com.example.ezhealth_mobile.entity;
 
 public class ObjectDefault {
 
