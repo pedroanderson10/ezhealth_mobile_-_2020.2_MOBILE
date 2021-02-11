@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         loginSenha.addTextChangedListener(loginTextWatcher);
         // Confirmar se todos os campos estão preenchidos *//
 
-
+        //TESTE TESTE
     }
 
     // Confirmar se todos os campos estão preenchidos
