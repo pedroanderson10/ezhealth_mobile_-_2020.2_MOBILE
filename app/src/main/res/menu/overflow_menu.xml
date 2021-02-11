@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        android:title="Voltar" />
+    <item
+        android:id="@+id/menuItemEditar"
+        android:title="Editar" />
+    <item
+        android:id="@+id/menuItemExcluir"
+        android:title="Excluir" />
+</menu>
